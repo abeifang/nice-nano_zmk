@@ -1,0 +1,22 @@
+if SHIELD_CHARYBDIS_RIGHT
+
+	config ZMK_KEYBOARD_NAME
+		default "Sonny's"
+
+	config ZMK_SPLIT_BLE_ROLE_CENTRAL
+		default y
+
+#	config USB_DEVICE_PRODUCT
+#    		default ZMK_KEYBOARD_NAME
+
+#	config BT_DEVICE_NAME
+#    		default ZMK_KEYBOARD_NAME
+
+endif
+
+if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
+
+	config ZMK_SPLIT
+		default y
+
+endif
